@@ -5,7 +5,7 @@
 <title>Ein schöner Tag</title>
 </head>
 <body>
-<h1>einen schönen Guten Tag</h1>
+<h1>einen schönen Guten Tag von {{ site.name }}</h1>
 <p>An dieser Stelle eine <strong>öffentliche</strong> Notiz.</p> 
 <a href="index.html"><img src="http://placekitten.com/g/500/300" /></a>
 <p>Mein <a href="http://wiki.itbs.bplaced.net" >Dokuwiki</a> ist auch öffentlich.</p>
@@ -17,7 +17,9 @@ find . -iname \*.php -exec cp {} {}.backup \;
 <h4>Cited text</h4>
 <blockquote>
 Was man lernen muss, um es zu tun, das lernt man, indem man es tut
+
+{{ site.spruch }}
 </blockquote>
-<footer><address>itbs@visproxy.net</address></footer>
+<footer><address>{{ site.email }}</address></footer>
 </body>
 </html>
